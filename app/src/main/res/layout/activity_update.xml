@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".UpdateActivity">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/school" />
+
+    <EditText
+        android:id="@+id/idET"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="search the ID"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <Button
+        android:onClick="search"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:text="Search" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <EditText
+        android:id="@+id/departmentET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <EditText
+        android:id="@+id/contactET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <EditText
+        android:id="@+id/genderET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+    <Button
+        android:onClick="update"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:text="Update" />
+
+</LinearLayout>
