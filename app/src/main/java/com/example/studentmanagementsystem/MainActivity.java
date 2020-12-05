@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.aboutID:
-                Toast.makeText(this, "kaj hoise vai", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "about", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.shareID:
                 shareApp();
