@@ -9,22 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentManagementSystem">
-        <activity android:name=".DeleteActivity"></activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".DeleteActivity" />
         <activity android:name=".UpdateActivity" />
         <activity android:name=".ShowAllActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".AddActivity" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".LogInActivity" >
+        <activity android:name=".LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

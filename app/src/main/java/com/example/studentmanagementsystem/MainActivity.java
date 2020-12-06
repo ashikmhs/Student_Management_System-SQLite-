@@ -40,8 +40,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
-            case R.id.aboutID:
-                Toast.makeText(this, "about", Toast.LENGTH_SHORT).show();
+            case R.id.logOutID:
+                Intent intent = new Intent(MainActivity.this,LogInActivity.class);
+                startActivity(intent);
                 break;
             case R.id.shareID:
                 shareApp();
@@ -85,9 +86,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void logOut(View view) {
+    public void about(View view) {
 
-        Intent intent = new Intent(MainActivity.this,LogInActivity.class);
+        Intent intent = new Intent(MainActivity.this,AboutActivity.class);
         startActivity(intent);
     }
 }

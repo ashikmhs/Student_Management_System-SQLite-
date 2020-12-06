@@ -240,7 +240,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:onClick="logOut"
+        android:onClick="about"
         android:id="@+id/aboutDevCV"
         android:layout_margin="10dp"
         android:clickable="true"
@@ -259,12 +259,12 @@
             android:layout_gravity="center"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:background="@drawable/logout" />
+            android:background="@drawable/information" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log out"
+            android:text="About"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="#009688"/>

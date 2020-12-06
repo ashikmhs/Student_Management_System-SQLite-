@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#009688"
+    android:layout_height="match_parent"
+    tools:context=".FragmentOne">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a database app using SQLite database on Android,I use every method off database insert,delete,update,show,search etc.It also have uses of layouts and fragments , not only that it has uses of spinner,radio button,custom designed edit text button and many more things.i also created a login and signUp system using SQLite database. "/>
+
+</FrameLayout>

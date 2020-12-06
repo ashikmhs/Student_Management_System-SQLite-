@@ -13,8 +13,8 @@
                 android:title="Share"
                 android:id="@+id/shareID"/>
             <item
-                android:title="About"
-                android:id="@+id/aboutID"/>
+                android:title="Log Out"
+                android:id="@+id/logOutID"/>
 
         </menu>
 

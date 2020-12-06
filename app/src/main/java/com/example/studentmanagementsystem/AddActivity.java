@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -13,29 +17,44 @@ public class AddActivity extends AppCompatActivity {
 
     TextInputLayout nameET,idET,departmentET,contactET,genderET;
     databaseHelperTwo DBHelperTWO;
+    RadioGroup radioGroupID;
+    RadioButton radioButton;
+    Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+
         nameET = findViewById(R.id.nameET);
         idET = findViewById(R.id.idET);
-        departmentET = findViewById(R.id.departmentET);
+       /* departmentET = findViewById(R.id.departmentET);*/
         contactET = findViewById(R.id.contactNumberET);
-        genderET = findViewById(R.id.genderET);
+        /*genderET = findViewById(R.id.genderET);*/
+        radioGroupID = findViewById(R.id.radioGroupID);
+        spinner = findViewById(R.id.spinnerID);
 
         DBHelperTWO = new databaseHelperTwo(this);
 
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.departmentArray, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
     }
 
     public void ADD(View view) {
 
+        radioButton = findViewById(radioGroupID.getCheckedRadioButtonId());
+
+
         String name = nameET.getEditText().getText().toString().trim();
         String id = idET.getEditText().getText().toString().trim();
-        String department = departmentET.getEditText().getText().toString().trim();
+        /*String department = departmentET.getEditText().getText().toString().trim();*/
+        String department = spinner.getSelectedItem().toString();
         String contact = contactET.getEditText().getText().toString().trim();
-        String gender = genderET.getEditText().getText().toString().trim();
+        /*String gender = genderET.getEditText().getText().toString().trim();*/
+        String gender = radioButton.getText().toString();
 
 
 
