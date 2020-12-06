@@ -45,7 +45,7 @@ public class SearchActivity extends AppCompatActivity {
 
             final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             dialog.setTitle("Search Result");
-            dialog.setMessage(ID+"\n"+"Name: "+name+"\n"+"ID: "+studentId+"\n"+"Department: "+department+"\n"+"Contact: "+contact+"\n"+"Gender: "+gender);
+            dialog.setMessage("Name: "+name+"\n"+"ID: "+studentId+"\n"+"Department: "+department+"\n"+"Contact: "+contact+"\n"+"Gender: "+gender);
             dialog.setCancelable(true);
             dialog.setPositiveButton("Close", new DialogInterface.OnClickListener() {
                 @Override
