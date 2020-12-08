@@ -15,6 +15,6 @@
     android:textColor="#fff"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Developed By Ashik Mahmud\n"/>
+    android:text="Developed By:\n Ashraf Mahmud Shadhin\n Mehedi Hasan \n Rishadun Noor Tazim\n Masum Billah"/>
 
 </FrameLayout>
